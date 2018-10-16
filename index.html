@@ -7,26 +7,130 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <title> My Blog </title>
-    <link href="https://fonts.googleapis.com/css?family=Acme|Cabin|Josefin+Sans" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Cabin', sans-serif;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+SC|Raleway|Great+Vibes" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
 </head>
 <body>
-    <section class="section">
-        <div class="container">
-            <div class="columns is-full has-background-danger has-border-dark">
-                <h1 class="title">
-                    Hello World
-                </h1>
-                <p class="subtitle">
-                    My first website with <strong>Bulma</strong>!
-                </p>
+<section class="section mainSection">
+    <div class="columns">
+        <div class="column is-narrow sideBar">
+            <p class="buttons is-centered">
+                <a class="button">
+                        <span class="icon">
+                        <i class="fab fa-facebook"></i>
+                        </span>
+                </a>
+                <a class="button">
+                        <span class="icon">
+                        <i class="fab fa-github"></i>
+                        </span>
+                </a>
+                <a class="button">
+                        <span class="icon">
+                        <i class="fab fa-linkedin-in"></i>
+                        </span>
+                </a>
+            </p>
+            <figure class="image is-square">
+                <img src="https://avatars0.githubusercontent.com/u/35193027?s=460&v=4" alt="Image">
+            </figure>
+            <div class="column nav">
+                <p><span class="icon"><i class="fas fa-home fa-xs"></i></span></a><span>Home</span></p>
+                <p><span class="icon"><i class="fas fa-user fa-xs"></i></span><span>About Me</span></p>
+                <p><span class="icon"><i class="fas fa-portrait fa-xs"></i></span><span>Portfolio</span></p>
+                <p><span class="icon"><i class="fas fa-file fa-xs"></i></span><span>Resume</span></p>
+                <p><span class="icon"><i class="fas fa-file-signature fa-xs"></i></span><span>Contact</span></p>
             </div>
         </div>
-    </section>
+        <div class="column main is-10">
+                <span class="typing">
+                    <p class="title">Lala Rukh<span class="blink">|</span></p>
+                </span>
+            <p class="subtitle is-4 is-offset-1">A web developer by profession.</p>
+            <p class="subtitle is-4">Aiming towards Full Stack with a passion for front-End.</p>
+        </div>
+    </div>
+</section>
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/parallax-theme/assets/wow.min.js"></script>
 </body>
 </html>
+<style>
+    .mainSection {
+        /*Background: linear-gradient(to right, #263648, #4e4e4e);*/
+        Background-color: #263648;
+        padding: 1.5rem;
+        color: lightgray;
+        height: 100vh;
+        font-family: 'Alegreya SC', serif;
+    }
 
+    .sideBar {
+        box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);
+        margin: 0.5rem;
+        height: 400px;
+        background-color: #808080;
+        margin-left: 2.5rem;
+    }
+
+    .main {
+        box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);
+        margin: 0.5rem;
+        padding: 1rem;
+        background-color: #808080;
+        font-family: 'Merriweather', serif;
+    }
+
+    .main p {
+        padding-left: 2rem;
+        color: #3a4f60;
+    }
+
+    .nav .icon {
+        height: 25px;
+        width: 25px;
+        background-color: #3a4f60;
+        border-radius: 50%;
+        display: inline-block;
+        margin-right: 10px;
+        color: white;
+        text-align: center;
+    }
+
+    .nav p {
+        margin-top: 6px;
+    }
+
+    .image img {
+        filter: brightness(90%);
+    }
+
+    .typing p {
+        font-family: 'Alegreya SC', serif;
+        font-size: 5rem;
+        color: white;
+        margin: 10px 0 0 10px;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 35em;
+        padding: 20px;
+        animation: type 4s steps(90, end);
+    }
+
+    .typing .blink {
+        animation: blink 1s infinite;
+    }
+
+    @keyframes type {
+        from {
+            width: 0;
+        }
+    }
+
+    @keyframes blink {
+        to {
+            opacity: .0;
+        }
+    }
+
+</style>
