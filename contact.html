@@ -86,7 +86,8 @@
             <div class="card__corner contactCorner">
                 <div class="card__corner-triangle"></div>
             </div>
-            <div class="section contact">
+            <form class="section contact">
+                <form class="form" method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
                 <div class="form column">
             <div class="field">
                 <label class="label">Name</label>
@@ -115,6 +116,7 @@
                 </div>
             </div>
         </div>
+            </form>
             </div>
         </div>
     </div>
