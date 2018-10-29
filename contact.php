@@ -121,20 +121,4 @@
         </div>
     </div>
 </section>
-<?PHP
-$name = $_POST["name"];
-$email = $_POST["email"];
-$message = $_POST["message"];
-$to = "lalarukh.1992@outlook.com";
-$subject = "New Email Address for Mailing List";
-$headers = "From: $email\n";
-$message = "A visitor to your site has sent the following email address to be added to your mailing list.\n
-
-Email Address: $email;
-Name: $name;
-Message: $message";
-
-mail($to,$subject,$message,$headers);
-echo "Thank you for your message, I will reply to you soon!"
-?>
 </body>
