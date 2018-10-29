@@ -115,7 +115,7 @@
                     <button class="button">Send</button>
                 </div>
             </div>
-                </div>
+                </form>
         </div>
             </div>
         </div>
