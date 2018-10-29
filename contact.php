@@ -88,6 +88,7 @@
             </div>
             <div class="section contact">
                 <div class="form column">
+                    <form action="https://formspree.io/lalarukh.1992@outlook.com" method="POST" />
             <div class="field">
                 <label class="label">Name</label>
                 <div class="control has-icons-left has-icons-right">
@@ -114,6 +115,7 @@
                     <button class="button">Send</button>
                 </div>
             </div>
+                </div>
         </div>
             </div>
         </div>
