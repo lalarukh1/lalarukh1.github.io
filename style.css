@@ -1,0 +1,297 @@
+html,body {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+body {
+    background-color: #263648;
+}
+a {
+    color: white;
+}
+.mainSection {
+    color: lightgray;
+    font-family: 'Alegreya SC', serif;
+}
+.main, .aboutMeMain, .portfolioMain, .resumeMain, .contactMain {
+    border: 0;
+    font-family: 'Merriweather', serif;
+    color: lightgray;
+    word-wrap: break-word;
+    margin: 1%;
+}
+.main p, .aboutMeMain p, .portfolioMain p, .resumeMain p, .contactMain p {
+    padding: 0.5%;
+    color: lightgray;
+}
+.main, .aboutMeMain, .portfolioMain, .resumeMain, .contactMain {
+    background-image: linear-gradient(rgba(58, 79, 96, 0.4), rgba(64, 64, 64, 0.42)), url("http://lancedesign.org/en/wp-content/uploads/2016/05/Website-Design-Background-1.jpg");
+    background-size: cover;
+}
+.main .text {
+    padding: 4%;
+    padding-top: 6%;
+    padding-bottom: 6%;
+}
+/*sidebar*/
+.sideBar {
+    margin: 1%;
+    margin-bottom: 4%;
+    background-color: #263648;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 4px 2px -2px #3a4f60,
+    inset 0 4px 2px -2px rgba(0, 0, 0, 0.3),
+    0 6px 10px 0px rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);
+}
+.sideBar img {
+    box-shadow: inset 0 4px 2px -2px rgba(255, 255, 255, 0.3),
+    inset 0 4px 2px -2px rgba(0, 0, 0, 0.3),
+    0 4px 2px -2px rgba(255, 255, 255, 0.3);
+    padding-bottom: 8%;
+}
+.button .icon {
+    color: #263648;
+}
+.nav .icon {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+    color: white;
+    text-align: center;
+}
+.nav .homeI {
+    background-color: #3a4f60;
+}
+.nav .aboutI {
+    background-color: #6c587b;
+}
+.nav .portfolioI {
+    background-color: #c06c84;
+}
+.nav .resumeI {
+    background-color: #f67280;
+}
+.nav .contactI {
+    background-color: #f8b195;
+}
+.nav a:hover {
+    color: white;
+}
+.nav .homeNav:hover, .homeNav .is-active{
+    background-color: rgb(58, 79, 96);
+    color: white;
+}
+.nav .aboutNav:hover, .aboutNav .is-active{
+    background-color: rgb(108, 88, 123);
+    color: white;
+}
+.nav .portfolioNav:hover, .portfolioNav .is-active{
+    background-color: rgb(192, 108, 132);
+    color: white;
+}
+.nav .resumeNav:hover, .resumeNav .is-active{
+    background-color: rgb(246, 114, 128);
+    color: white;
+}
+.nav .contactNav:hover, .contactNav .is-active{
+    background-color: #f8b195;
+    color: white;
+}
+.nav p {
+    padding-bottom: 8px;
+    padding-top: 6px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 -4px 2px -2px rgba(0, 0, 0, 0.3),
+    0 3px 2px -2px #3a4f60;
+}
+/*Typing effect homepage*/
+.typing p {
+    font-family: 'Alegreya SC', serif;
+    font-size: 5rem;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 8em;
+    margin-left: 1%;
+    animation: type 4s steps(70, end);
+}
+.typing .blink {
+    animation: blink 1s infinite;
+}
+@keyframes type {
+    from {
+        width: 0;
+    }
+}
+@keyframes blink {
+    to {
+        opacity: .0;
+    }
+}
+/*Folded corner all pages*/
+.card {
+    box-shadow: 0 0 !important;
+    border: 0 !important;
+}
+.card .card__corner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 4em;
+    height: 4em;
+    transition: all ease 0.5s;
+}
+.card:hover > .card__corner {
+    width: 6em;
+    height: 6em;
+}
+.card .card__corner .card__corner-triangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 6em 6em 0;
+    border-color: transparent #263648 transparent transparent;
+}
+.card .homeCorner {
+    background-color: #3a4f60;
+}
+.card .aboutCorner {
+    background-color: #6c587b;
+}
+.card .portfolioCorner {
+    background-color: #c06c84;
+}
+.card .resumeCorner {
+    background-color: #f67280;
+}
+.card .contactCorner {
+    background-color: #f8b195;
+}
+
+/*About me*/
+.aboutMe {
+    padding: 2%;
+}
+.aboutMe .level-left {
+    margin-left: 3.5%;
+}
+.aboutMe .level-left a {
+    color: #a5a5a5;
+}
+.aboutMe .box {
+    background-color: rgba(38, 54, 72, 0.5);
+}
+
+/*Portfolio*/
+.portfolio {
+    margin: 3%;
+}
+.portfolio .box {
+    background-color: rgba(38, 54, 72, 0.5);
+    margin: 4%;
+}
+.portfolioMain .carousel {
+    margin-top: 6%;
+}
+.portfolioMain .portfolio .box p {
+    margin-top: 2% !important;
+}
+.portfolioMain .carousel-container .carousel-item .title {
+    background-color: rgba(38, 54, 72, 0.5);
+    color: white;
+}
+.portfolioMain .portfolio .box a:hover {
+    color: white;
+    font-weight: bold;
+}
+/*resume*/
+.resume {
+    margin-top: 5%;
+}
+.resume .panel,.panel-heading{
+    background-color: #2d465a;
+    border: thin solid #2d465a !important;
+}
+.resume .panel-tabs {
+    border: thin solid #2d465a !important;
+    background-color: rgba(243, 125, 125, 0.4);
+}
+.resume .panel-tabs a {
+    padding:1.5%;
+    margin: 1%;
+    width: 10rem;
+    border-bottom: 0px solid #2d465a !important;
+}
+.resume .message-body {
+    background-color: rgba(45, 70, 90, 0.6);
+    color: white;
+    border-left: thick solid  rgba(243, 125, 125, 0.4);
+    padding-right: 5%;
+}
+.resume .timeline {
+    padding-left: 1%;
+}
+.resume .panel-tabs a:hover, a.is-active:hover{
+    border-bottom: thin solid white !important;
+    color: white !important;
+}
+.resume .panel-tabs a.is-active {
+    color: white;
+    border-bottom: 0px solid white !important;
+}
+.resume .panel-block {
+    border: thin solid #2d465a !important;
+    border-top: none;
+}
+.resume .panel-block .tabsp {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    color: white;
+}
+.resume .panel-block #tab-content .tabsp {
+    display: none;
+}
+
+.resume .panel-block #tab-content .is-active {
+    display: block;
+}
+.resume .panel-block .skills h2 {
+    /*margin: 2%;*/
+}
+.resume .tag {
+    background-color: rgba(246, 114, 128, 0.41);
+    color: white;
+}
+.resume .title {
+    color: white;
+}
+/*contact*/
+.contactMain .label {
+    color: white;
+}
+.contact .form {
+    padding: 4%;
+    margin: 1%;
+    background-color: rgba(38, 54, 72, 0.5);
+}
+.contact .button {
+    margin-top: 2%;
+    background-color: #ffb699;
+    color: white;
+    font-weight: bold;
+    border: thin solid #f8b195;
+}
+
+.contact .button:hover {
+    background-color: rgba(255, 190, 169, 0.8);
+}
+
+.contactMain .message-body {
+    margin-top: 3%;
+    background-color: rgba(45, 70, 90, 0.6);
+    color: white;
+    border-left: thick solid rgba(255, 182, 153, 0.6);
+}
