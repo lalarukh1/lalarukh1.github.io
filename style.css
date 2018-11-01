@@ -28,6 +28,9 @@ a {
     background-image: linear-gradient(rgba(58, 79, 96, 0.4), rgba(64, 64, 64, 0.42)), url("http://lancedesign.org/en/wp-content/uploads/2016/05/Website-Design-Background-1.jpg");
     background-size: cover;
 }
+.main .subtitle {
+    margin-left: 1%;
+}
 .main .text {
     padding: 4%;
     padding-top: 6%;
