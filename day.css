@@ -13,6 +13,9 @@ a {
     color: lightgray;
     font-family: 'Alegreya SC', serif;
 }
+.main .subtitle {
+    margin-left: 1%;
+}
 .main, .aboutMeMain, .portfolioMain, .resumeMain, .contactMain {
     border: 0;
     font-family: 'Merriweather', serif;

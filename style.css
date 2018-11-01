@@ -13,6 +13,9 @@ a {
     color: lightgray;
     font-family: 'Alegreya SC', serif;
 }
+.main .subtitle {
+    margin-left: 1%;
+}
 .main, .aboutMeMain, .portfolioMain, .resumeMain, .contactMain {
     border: 0;
     font-family: 'Merriweather', serif;
@@ -27,9 +30,6 @@ a {
 .main, .aboutMeMain, .portfolioMain, .resumeMain, .contactMain {
     background-image: linear-gradient(rgba(58, 79, 96, 0.4), rgba(64, 64, 64, 0.42)), url("http://lancedesign.org/en/wp-content/uploads/2016/05/Website-Design-Background-1.jpg");
     background-size: cover;
-}
-.main .subtitle {
-    margin-left: 1%;
 }
 .main .text {
     padding: 4%;
