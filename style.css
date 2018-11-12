@@ -5,6 +5,13 @@ html,body {
 }
 body {
     background-color: #263648;
+    scrollbar-face-color: #0ec2ff;
+    scrollbar-track-color: #fff8dc;
+    scrollbar-arrow-color: #ffffff;
+    scrollbar-highlight-color: #fff8dc;
+    scrollbar-shadow-color: #0688d2;
+    scrollbar-3dlight-color: #ffebcd;
+    scrollbar-darkshadow-color: #8b0000;
 }
 a {
     color: white;
