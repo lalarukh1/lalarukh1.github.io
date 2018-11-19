@@ -1,0 +1,304 @@
+html,
+body {
+    margin: 0;
+    height: 100%;
+    background-color: transparent;
+}
+#pinContainer {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.panel {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.first , .second, .third, .fourth{
+    font-family: 'Vollkorn', serif;
+    background-color: #afaeaf;
+    background-image: linear-gradient(rgba(185, 165, 147, 0.17), rgba(52, 26, 18, 0.45)), url("https://nov17vas.files.wordpress.com/2012/04/the-best-top-desktop-brown-wallpapers-hd-brown-wallpaper-141.jpg");
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0 0 400px #231111;
+    border-left: 4px double #231111;
+    border-right: 4px double #231110;
+}
+.first .secondRow {
+    color: #1d0e0e;
+}
+.first .borderMiddle {
+    border-left: thin solid brown;
+}
+.first h1 {
+    font-family: 'Unica One', cursive;
+    font-weight: bold;
+    text-shadow: 2px 2px 1px #1a0d0d, 1px 1px 2px brown;
+    color: #341a12;
+    margin-left: 1.2%;
+}
+.first ul, .fourth-links ul {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    margin:0;
+    padding:0;
+    display:flex;
+}
+
+.first ul li , .fourth-links ul li{
+    list-style: none;
+}
+
+.first ul li a, .fourth-links ul li a {
+    position: relative;
+    width:30px;
+    height:30px;
+    display:block;
+    text-align:center;
+    margin:0 5px;
+    border-radius: 50%;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration:none;
+    box-shadow: 0 8px 10px rgba(0,0,0,0.3);
+    background: linear-gradient(5deg, #341a12, #341a12);
+    transition: .5s;
+}
+
+.first ul li a:hover, .fourth-links ul li a:hover {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    text-decoration: none;
+}
+
+.first ul li a .fa, .fourth-links ul li a .fa {
+    width: 100%;
+    height:100%;
+    display:block;
+    background: linear-gradient(50deg,  #341a12, #917d6d);
+    border-radius: 50%;
+    line-height: calc(45px - 16px);
+    font-size:16px;
+    color: #281412;
+    transition: .5s;
+}
+.second h4,.second h5, .third h4, .fourth h1, .disclaimer{
+    color: white;
+}
+.second .iphone .iphone-frame {
+    height: 80%;
+}
+
+#animate {
+    height: 10%;
+}
+#animate .iphone-frame {
+    height: 42em;
+}
+#animate .iphone-content{
+    /*position: absolute;*/
+    top: -2px;
+    left: -300px;
+    width: 16.6em;
+    height: 29.4em;
+}
+#animate .layer3 {
+    opacity: 0;
+    top: -1px;
+    left: -248px;
+    width: 17em;
+    height: 29.8em;
+}
+.landscape {
+    position: relative;
+    bottom: 430px;
+}
+
+.third embed {
+    border: thick solid #281412;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    display: none;
+}
+.fourth {
+    background-color: #e1e0c0;
+}
+.fourth #animate1 {
+    transition: transform 0.3s ease-out;
+}
+.fourth .zap {
+    transform: scale(2.5, 0);
+}
+.fourth .go-back {
+    color: white;
+    border: thin solid white;
+    padding: 0.5rem;
+}
+.fourth a:hover {
+    text-decoration: none;
+}
+/*Flat page*/
+.flat {
+    font-family: 'Russo One', sans-serif;
+}
+.top-part {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.logo {
+    height: 14%;
+    background-color: #DD9D46;
+    color: #4D0906;
+}
+.logo i {
+    color:#4D0906;
+}
+.nav {
+    height: 14%;
+    background-color: #DD9D46;
+    color: #4D0906;
+    float: right;
+}
+.centerCol {
+    width: 80%;
+    height: 56%;
+    color: #4D0906;
+}
+i {
+    color: #4D0906;
+}
+.centerCol h1 {
+    font-size: 2.8em;
+}
+span.icon {
+    float:right;
+    background-color: #E5C59C;
+    border: thin solid #E5C59C;
+    border-radius: 50%;
+}
+#video-background {
+    position: relative;
+    z-index: -100;
+}
+.after-video {
+    height: 60%;
+    background-color: #4D0906;
+    position: absolute;
+    bottom: 120px;
+    color: #E5C59C;
+    margin-right: 10%;
+    margin-left: 15%;
+    margin-top: 10%;
+    margin-bottom: 1%;
+}
+.after-video h2 {
+    font-size: 30px;
+}
+.after-video .btn, .cards-row .btn{
+    border: thin solid #A44704;
+    border-radius: 0;
+    background-color: #A44704;
+    color: #E5C59C;
+}
+.after-video-text p {
+    font-size: 16px;
+    color: #4D0906;
+}
+.cards-row-container {
+    background-color: rgba(229, 197, 156, 0.7);
+}
+.cards-row-main {
+    background-image: linear-gradient(rgba(229, 197, 156, 0.71), rgba(229, 197, 156, 0.9)), url("http://www.textures4photoshop.com/tex/thumbs/fruit-seamless-pattern-background-thumb33.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -999;
+    border-top: thin solid #a44704;
+}
+.cards-row .leftcol {
+    height: 30%;
+    left: 5%;
+}
+.cards-row .leftcol img {
+    border: thin solid #a44704;
+}
+.cards-row .rightcol {
+    height: 55%;
+    background-color: rgba(77, 9, 6, 0.91);
+    position: relative;
+    top: 4em;
+    right: 12em;
+    border: thin solid #a44704;
+    border-left: thick solid #a44704;
+}
+.cards-row .rightocol {
+    height: 30%;
+    position: relative;
+    left: 14em;
+}
+.cards-row .rightocol img {
+    border: thin solid #a44704;
+}
+.cards-row .leftocol {
+    height: 55%;
+    background-color: rgba(77, 9, 6, 0.9);
+    position: relative;
+    top: 4em;
+    right: 8em;
+    border: thin solid #a44704;
+    border-left: thick solid #a44704;
+}
+.cards-row .rightmcol {
+    height: 30%;
+    margin-top: 5%;
+}
+.cards-row .rightmcol img {
+    border: thin solid #a44704;
+}
+.cards-row .leftmcol {
+    height: 50%;
+    background-color: rgba(77, 9, 6, 0.9);
+    position: relative;
+    bottom: 10em;
+    border: thin solid #a44704;
+    border-left: thick solid #a44704;
+}
+.cards-row h1 {
+    color: #ae9a88;
+}
+.cards-row p {
+    color: #e0ccb9;
+}
+
+.footer {
+    background-color: #A44704;
+}
+.footer p {
+    color: white;
+}
+/*Responsive*/
+@media only screen and (max-width: 500px)
+{
+    body,html {
+        height: 120%;
+    }
+    .first p {
+        font-size: 22px;
+    }
+    .first h4 {
+        font-size: 30px;
+    }
+    .first h5 {
+        font-size: 26px;
+    }
+    .first .borderMiddle {
+        border-left: none;
+    }
+    .first h1 {
+        margin-left: 0.1%;
+    }
+}
