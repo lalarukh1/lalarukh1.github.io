@@ -148,17 +148,6 @@
     </div>
 
     <script src="javascript.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('.panel-tabs a').on('click', function () {
-                let tab = $(this).data('tab');
-                $('.panel-tabs a').removeClass('is-active');
-                $(this).addClass('is-active');
-                $('#tab-content .tabsp').removeClass('is-active');
-                $('div.tabsp[data-content="' + tab + '"]').addClass('is-active');
-            });
-        });
-    </script>
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="javascript.js"></script>
 </body>
