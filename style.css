@@ -5,59 +5,22 @@ html,body {
 }
 body {
     background-color: #263648;
-    scrollbar-face-color: #0ec2ff;
-    scrollbar-track-color: #fff8dc;
-    scrollbar-arrow-color: #ffffff;
-    scrollbar-highlight-color: #fff8dc;
-    scrollbar-shadow-color: #0688d2;
-    scrollbar-3dlight-color: #ffebcd;
-    scrollbar-darkshadow-color: #8b0000;
 }
 a {
     color: white;
 }
-.mainSection {
-    color: lightgray;
-    font-family: 'Alegreya SC', serif;
-}
-.main .subtitle {
-    margin-left: 1%;
-}
-.main, .aboutMeMain, .portfolioMain, .resumeMain, .contactMain {
-    border: 0;
-    font-family: 'Merriweather', serif;
-    color: lightgray;
-    word-wrap: break-word;
-    margin: 1%;
-}
-.main p, .aboutMeMain p, .portfolioMain p, .resumeMain p, .contactMain p {
-    padding: 0.5%;
-    color: lightgray;
-}
-.main, .aboutMeMain, .portfolioMain, .resumeMain, .contactMain {
-    background-image: linear-gradient(rgba(58, 79, 96, 0.4), rgba(64, 64, 64, 0.42)), url("http://lancedesign.org/en/wp-content/uploads/2016/05/Website-Design-Background-1.jpg");
-    background-size: cover;
-}
-.main .text {
-    padding: 4%;
-    padding-top: 6%;
-    padding-bottom: 6%;
-}
 /*sidebar*/
-.sideBar {
-    margin: 1%;
-    margin-bottom: 4%;
+.wrapper {
+    margin: 3rem;
+}
+.side-bar {
+    height: fit-content;
+    margin: 0 1rem 1rem 1rem;
     background-color: #263648;
     border: 2px solid rgba(0, 0, 0, 0.1);
     box-shadow: inset 0 4px 2px -2px #3a4f60,
     inset 0 4px 2px -2px rgba(0, 0, 0, 0.3),
     0 6px 10px 0px rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);
-}
-.sideBar .image {
-    box-shadow: inset 0 4px 2px -2px rgba(255, 255, 255, 0.3),
-    inset 0 4px 2px -2px rgba(0, 0, 0, 0.3),
-    0 4px 2px -2px rgba(255, 255, 255, 0.3);
-    margin-bottom: 8%;
 }
 .button .icon {
     color: #263648;
@@ -70,6 +33,10 @@ a {
     margin-right: 10px;
     color: white;
     text-align: center;
+}
+.side-bar .card {
+    margin-bottom: 10%;
+    background: linear-gradient(rgba(131, 177, 197, 0.4), rgba(38, 54, 72, 0.71));
 }
 .nav .homeI {
     background-color: #3a4f60;
@@ -116,192 +83,40 @@ a {
     box-shadow: inset 0 -4px 2px -2px rgba(0, 0, 0, 0.3),
     0 3px 2px -2px #3a4f60;
 }
-/*Typing effect homepage*/
-.typing p {
-    font-family: 'Alegreya SC', serif;
-    font-size: 5rem;
-    color: white;
-    white-space: nowrap;
-    overflow: hidden;
-    width: 8em;
-    margin-left: 1%;
-    animation: type 4s steps(70, end);
-}
-.typing .blink {
-    animation: blink 1s infinite;
-}
-@keyframes type {
-    from {
-        width: 0;
-    }
-}
-@keyframes blink {
-    to {
-        opacity: .0;
-    }
-}
-/*Folded corner all pages*/
-.card {
-    box-shadow: 0 0 !important;
-    border: 0 !important;
-}
-.card .card__corner {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 4em;
-    height: 4em;
-    transition: all ease 0.5s;
-}
-.card:hover > .card__corner {
-    width: 6em;
-    height: 6em;
-}
-.card .card__corner .card__corner-triangle {
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 0 6em 6em 0;
-    border-color: transparent #263648 transparent transparent;
-}
-.card .homeCorner {
-    background-color: #3a4f60;
-}
-.card .aboutCorner {
-    background-color: #6c587b;
-}
-.card .portfolioCorner {
-    background-color: #c06c84;
-}
-.card .resumeCorner {
-    background-color: #f67280;
-}
-.card .contactCorner {
-    background-color: #f8b195;
+.main-section {
+    background: linear-gradient(rgba(66, 84, 102, 0.4), rgba(61, 98, 118, 0.3));
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    margin: 0 1rem;
 }
 
-/*About me*/
-.aboutMe {
-    padding: 2%;
+.title {
+    padding-top: 1rem;
 }
-.aboutMe .level-left {
-    margin-left: 3.5%;
+.aside {
+    background-color: rgba(66, 84, 102, 0.4);
 }
-.aboutMe .level-left a {
-    color: #a5a5a5;
+.inner-main h1 {
+    color: rgb(144, 144, 144);
 }
-.aboutMe .box {
-    background-color: rgba(38, 54, 72, 0.5);
+.main-section p {
+    font-size: 15px;
+    margin-bottom: 1rem;
 }
-
-/*Portfolio*/
-.portfolio {
-    margin: 3%;
+.aside {
+    padding: 1rem;
 }
-.portfolio .box {
-    background-color: rgba(38, 54, 72, 0.5);
-    margin: 4%;
+.aside .card, .main-section .card {
+    padding: 1rem;
+    margin-bottom: 2rem;
+    background: #F5F5F5;
+    box-shadow: inset 0 4px 2px -2px #3a4f60,
+    inset 0 4px 2px -2px rgba(0, 0, 0, 0.3),
+    0 6px 10px 0px rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);
 }
-.portfolioMain .carousel {
-    margin-top: 6%;
+.aside .card p , .main-section .card p{
+    font-size: 12px;
+    margin-bottom: 0.3rem;
 }
-.portfolioMain .portfolio .box p {
-    margin-top: 2% !important;
-}
-.portfolioMain .carousel-container .carousel-item .title {
-    background-color: rgba(38, 54, 72, 0.5);
-    color: white;
-}
-.portfolioMain .portfolio .box a:hover {
-    color: white;
-    font-weight: bold;
-}
-/*resume*/
-.resume {
-    margin-top: 5%;
-}
-.resume .panel,.panel-heading{
-    background-color: #2d465a;
-    border: thin solid #2d465a !important;
-}
-.resume .panel-tabs {
-    border: thin solid #2d465a !important;
-    background-color: rgba(243, 125, 125, 0.4);
-}
-.resume .panel-tabs a {
-    padding:1.5%;
-    margin: 1%;
-    width: 10rem;
-    border-bottom: 0px solid #2d465a !important;
-}
-.resume .message-body {
-    background-color: rgba(45, 70, 90, 0.6);
-    color: white;
-    border-left: thick solid  rgba(243, 125, 125, 0.4);
-    padding-right: 5%;
-}
-.resume .timeline {
-    padding-left: 1%;
-}
-.resume .panel-tabs a:hover, a.is-active:hover{
-    border-bottom: thin solid white !important;
-    color: white !important;
-}
-.resume .panel-tabs a.is-active {
-    color: white;
-    border-bottom: 0px solid white !important;
-}
-.resume .panel-block {
-    border: thin solid #2d465a !important;
-    border-top: none;
-}
-.resume .panel-block .tabsp {
-    margin-top: 2%;
-    margin-bottom: 2%;
-    color: white;
-}
-.resume .panel-block #tab-content .tabsp {
-    display: none;
-}
-
-.resume .panel-block #tab-content .is-active {
-    display: block;
-}
-.resume .panel-block .skills h2 {
-    /*margin: 2%;*/
-}
-.resume .tag {
-    background-color: rgba(246, 114, 128, 0.41);
-    color: white;
-}
-.resume .title {
-    color: white;
-}
-/*contact*/
-.contactMain .label {
-    color: white;
-}
-.contact .form {
-    padding: 4%;
-    margin: 1%;
-    background-color: rgba(38, 54, 72, 0.5);
-}
-.contact .button {
-    margin-top: 2%;
-    background-color: #ffb699;
-    color: white;
-    font-weight: bold;
-    border: thin solid #f8b195;
-}
-
-.contact .button:hover {
-    background-color: rgba(255, 190, 169, 0.8);
-}
-
-.contactMain .message-body {
-    margin-top: 3%;
-    background-color: rgba(45, 70, 90, 0.6);
-    color: white;
-    border-left: thick solid rgba(255, 182, 153, 0.6);
+form {
+    padding-bottom: 2rem;
 }
