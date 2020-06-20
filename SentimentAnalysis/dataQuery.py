@@ -5,18 +5,8 @@ import traceback
 import GetTweets as got
 
 def main(argv):
-
-    if len(argv) == 1 and argv[0] == '-h':
-        print(__doc__)
-        return
-
     try:
-        opts, args = getopt.getopt(argv, "", ("querysearch=",
-                                              "since=",
-                                              "until=",
-                                              "lang=",
-                                              "output=",
-                                              "debug"))
+        opts, args = getopt.getopt(argv, "", ("querysearch=","since=","until=","lang=","output=","debug"))
 
         tweetCriteria = got.manager.TweetCriteria()
         outputFileName = "output_got.csv"
@@ -52,7 +42,7 @@ def main(argv):
                     raise Exception("File not found: %s"%uf)
                 with open(uf) as f:
                     data = f.read()
-                    data = re.sub('(?m)#.*?$', '', data)  # removing comments
+                    data = re.sub('(?m)#.*?$', '', data)
                     usernames_ = [u.lstrip('@') for u in re.split(r'[\s,]+', data) if u]
                     usernames_ = [u.lower() for u in usernames_ if u]
                     usernames |= set(usernames_)
@@ -70,33 +60,24 @@ def main(argv):
         outputFile = open(outputFileName, "w+", encoding="utf8")
         outputFile.write('date,username,to,replies,retweets,favorites,text,geo,mentions,hashtags,id,permalink\n')
 
-        cnt = 0
+        count = 0
         def receiveBuffer(tweets):
-            nonlocal cnt
+            nonlocal count
 
             for t in tweets:
                 data = [t.date.strftime("%Y-%m-%d %H:%M:%S"),
-                    t.username,
-                    t.to or '',
-                    t.replies,
-                    t.retweets,
-                    t.favorites,
-                    '"'+t.text.replace('"','""')+'"',
-                    t.geo,
-                    t.mentions,
-                    t.hashtags,
-                    t.id,
-                    t.permalink]
+                    t.username,t.to or '',t.replies,t.retweets,t.favorites,'"'+t.text.replace('"','""')+'"',
+                    t.geo,t.mentions,t.hashtags,t.id,t.permalink]
                 data[:] = [i if isinstance(i, str) else str(i) for i in data]
                 outputFile.write(','.join(data) + '\n')
 
             outputFile.flush()
-            cnt += len(tweets)
+            count += len(tweets)
 
             if sys.stdout.isatty():
-                print("\rSaved %i"%cnt, end='', flush=True)
+                print("\rSaved %i"%count, end='', flush=True)
             else:
-                print(cnt, end=' ', flush=True)
+                print(count, end=' ', flush=True)
 
         print("Downloading tweets...")
         got.manager.TweetManager.getTweets(tweetCriteria, receiveBuffer, debug=debug)
