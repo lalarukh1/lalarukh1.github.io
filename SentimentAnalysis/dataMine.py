@@ -1,10 +1,8 @@
 # -*- coding: utf-8 -*-
-
 import json, re, datetime, sys, random, http.cookiejar
 import urllib.request, urllib.parse, urllib.error
 from pyquery import PyQuery
 from .. import models
-
 
 class TweetManager:
 
@@ -15,7 +13,7 @@ class TweetManager:
     ]
 
     @staticmethod
-    def getTweets(tweetCriteria, receiveBuffer=None, bufferLength=100, proxy=None, debug=False):
+    def collectTweets(tweetCriteria, receiveBuffer=None, bufferLength=100, proxy=None, debug=False):
         results = []
         resultsAux = []
         cookieJar = http.cookiejar.CookieJar()
@@ -37,7 +35,7 @@ class TweetManager:
 
         for batch in range(n_batches):
             refreshCursor = ''
-            batch_cnt_results = 0
+            batch_count_results = 0
 
             if all_usernames:
                 tweetCriteria.username = all_usernames[
@@ -105,8 +103,8 @@ class TweetManager:
                         receiveBuffer(resultsAux)
                         resultsAux = []
 
-                    batch_cnt_results += 1
-                    if tweetCriteria.maxTweets > 0 and batch_cnt_results >= tweetCriteria.maxTweets:
+                    batch_count_results += 1
+                    if tweetCriteria.maxTweets > 0 and batch_count_results >= tweetCriteria.maxTweets:
                         active = False
                         break
 
@@ -124,8 +122,7 @@ class TweetManager:
             url += "f=tweets&"
 
         url += ("vertical=news&q=%s&src=typd&%s"
-                "&include_available_features=1&include_entities=1&max_position=%s"
-                "&reset_error_state=false")
+                "&include_available_features=1&include_entities=1&max_position=%s""&reset_error_state=false")
 
         urlGetData = ''
 
@@ -199,6 +196,5 @@ class TweetManager:
 
         if debug:
             print(s_json)
-            print("---\n")
 
         return dataJson
