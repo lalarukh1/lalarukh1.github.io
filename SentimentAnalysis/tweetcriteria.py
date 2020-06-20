@@ -3,7 +3,6 @@ class TweetCriteria:
     def __init__(self):
         self.maxTweets = 0
         self.topTweets = False
-        self.within = "15mi"
 
     def setSince(self, since):
         self.since = since
